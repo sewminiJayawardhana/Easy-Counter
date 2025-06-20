@@ -1,0 +1,130 @@
+body {
+    background: linear-gradient(135deg, #e0e7ff 0%, #f0fdfa 100%);
+    font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.counter-container {
+    max-width: 420px;
+    margin: 48px auto;
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px rgba(60, 72, 100, 0.15);
+    padding: 32px 28px 24px 28px;
+}
+
+h1 {
+    text-align: center;
+    color: #3b82f6;
+    margin-bottom: 24px;
+    font-size: 2.2rem;
+    letter-spacing: 1px;
+}
+
+.wordsContent {
+    width: 100%;
+    min-height: 120px;
+    resize: vertical;
+    border: 1.5px solid #c7d2fe;
+    border-radius: 10px;
+    padding: 14px;
+    font-size: 1.1rem;
+    margin-bottom: 24px;
+    background: #f8fafc;
+    transition: border-color 0.2s;
+}
+
+.wordsContent:focus {
+    outline: none;
+    border-color: #3b82f6;
+    background: #fff;
+}
+
+.counter {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 28px;
+    flex-wrap: wrap;
+}
+
+.counter > div {
+    flex: 1 1 40%;
+    background: #f1f5f9;
+    border-radius: 8px;
+    padding: 12px 0;
+    text-align: center;
+    margin: 4px 0;
+    box-shadow: 0 2px 8px rgba(59, 130, 246, 0.04);
+}
+
+.counter span {
+    display: block;
+    color: #64748b;
+    font-size: 0.98rem;
+    margin-bottom: 6px;
+    letter-spacing: 0.5px;
+}
+
+.counter div > div {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #3b82f6;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px 28px;
+    border: none;
+    border-radius: 8px;
+    background: #3b82f6;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(59, 130, 246, 0.08);
+    transition: background 0.2s, transform 0.1s;
+}
+
+button#clearBtn {
+    background: #f87171;
+}
+
+button#clearBtn:hover {
+    background: #ef4444;
+    transform: translateY(-2px) scale(1.04);
+}
+
+button#copyBtn {
+    background: #22d3ee;
+    color: #222;
+}
+
+button#copyBtn:hover {
+    background: #06b6d4;
+    color: #fff;
+    transform: translateY(-2px) scale(1.04);
+}
+
+button:hover {
+    background: #2563eb;
+    transform: translateY(-2px) scale(1.04);
+}
+
+@media (max-width: 600px) {
+    .counter-container {
+        padding: 18px 6px 14px 6px;
+    }
+    .counter {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
