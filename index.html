@@ -2,37 +2,37 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>My Web Page</title>
-        <link rel="stylesheet" href="styles.css">
+        <title>Easy Counter</title>
+       
         
     </head>
     <body>
-        <h1>Easy Counter</h1>
-        <textarea class="wordsContent" placeholder="Type or Paste Text here......"></textarea>
+        <div class="counter-container"> 
+            <h1>Easy Counter</h1>
+            <textarea class="wordsContent" placeholder="Type or Paste Text here......"></textarea>
 
-        <div class="counter">
+            <div class="counter">
 
-            <div class="wordCount">
-                Words: 
-                <span id="wordCount">0</span>
+                <div class="wordsCounter">
+                    <span class="">Words</span>
+                    <div class="wordCount">0</div>
+                </div>
+
+                <div class="charactersCounter">
+                    <span>Characters</span>
+                    <div class="charCount">0</div>
+                </div>
+
+                <div class="sentencesCounter">
+                    <span>Sentences</span>
+                    <div class="sentencesCount">0</div>
+                </div>
+
+                <div class="paragraphsCounter">
+                    <span>Paragraphs</span>
+                    <div class="paragraphCount">0</div>
+                </div>
             </div>
-
-            <div class="charCount">
-                Characters: 
-                <span id="charCount">0</span>
-            </div>
-
-            <div class="sentencesCount">
-                Sentences: 
-                <span id="sentencesCount">0</span>
-            </div>
-
-            <div class="paragraphCount">
-                Paragraphs: 
-                <span id="paragraphCount">0</span>
-            </div>
-
-        </div>
 
         <div class="buttons">
             <button id="clearBtn">Clear</button>
