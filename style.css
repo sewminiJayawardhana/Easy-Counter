@@ -52,7 +52,7 @@ h1 {
 
 .counter > div {
     flex: 1 1 40%;
-    background: #f1f5f9;
+    background: #e7f2fd;
     border-radius: 8px;
     padding: 12px 0;
     text-align: center;
@@ -62,7 +62,7 @@ h1 {
 
 .counter span {
     display: block;
-    color: #64748b;
+    color: #2680fd;
     font-size: 0.98rem;
     margin-bottom: 6px;
     letter-spacing: 0.5px;
