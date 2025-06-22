@@ -5,8 +5,9 @@ Easy-Counter is a simple and modern web app to count words, characters, sentence
 ## Features
 
 - Live word, character, sentence, and paragraph counting
-- Clear and copy buttons for convenience
+- Clear and Paste buttons for convenience
 - Responsive and clean UI
+- **Animated wavy background** for a modern look
 
 ## Screenshot
 
@@ -21,7 +22,7 @@ Easy-Counter is a simple and modern web app to count words, characters, sentence
 ## Technologies Used
 
 - HTML5
-- CSS3
+- CSS3 (with animated SVG background)
 - JavaScript
 
 ---
