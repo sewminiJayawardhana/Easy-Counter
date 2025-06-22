@@ -34,10 +34,15 @@ document.getElementById('clearBtn').addEventListener('click', function() {
     paragraphCount.textContent = 0;
 });
 
-//Copy button
-document.getElementById('copyBtn').addEventListener('click', function() {
-    let inputText = document.querySelector(".wordsContent");
-    inputText.select();
-    document.execCommand('copy');
-    alert("Text copied to clipboard!");
-}); 
+//Paste button
+document.getElementById('pasteBtn').addEventListener('click', function() {
+    navigator.clipboard.readText().then(text => {
+        let inputText = document.querySelector(".wordsContent");
+        inputText.value = text;
+
+        // Trigger the input event to update counts
+        inputText.dispatchEvent(new Event('input'));
+    }).catch(err => {
+        console.error('Failed to read clipboard contents: ', err);
+    });
+});
